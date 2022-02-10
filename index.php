@@ -80,8 +80,8 @@
     mb_language( 'Japanese' );
     mb_internal_encoding( 'UTF-8' );
     mb_send_mail($_SESSION['email'],'【布団のシンセイ】お問い合わせありがとうございます。', $message);
-    mb_send_mail('ishikawakiyohiro0224@gmail.com','【布団のシンセイ】お問い合わせが入りました。', $message);
-    mb_send_mail('ugkajiwara@gmail.com','【布団のシンセイ】お問い合わせが入りました。', $message);
+    mb_send_mail('メールアドレス@gmail.com','【布団のシンセイ】お問い合わせが入りました。', $message);
+    mb_send_mail('メールアドレス@gmail.com','【布団のシンセイ】お問い合わせが入りました。', $message);
     $_SESSION = array();
     $url = './thanks.php';
     header('Location: ' . $url, true, 301);
@@ -294,9 +294,9 @@
           ▽お急ぎの方はこちらから▽<br>
           お電話ください
           </div>
-          <a href="tel:0120-300-135">
+          <a href="tel:電話番号">
             <div class="callToAction">
-              TEL.0120-300-135
+              TEL
             </div>
           </a>
         </div>
